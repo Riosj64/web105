@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chicken</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* custom styles here! */
+        /* ROWS ARE CRITICAL! THEY RESET THE FLOW OF THE PAGE!!! */
+
+        body {
+            background: ivory;
+        }
+
+        .row {
+            border: 3px solid gold;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+
+        }
+
+        /* For mobile phones: */
+
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 630px) {
+
+            /* For tablets: */
+            body {
+                background: tan;
+            }
+
+            .col-m-1 {
+                width: 8.33%;
+            }
+
+            .col-m-2 {
+                width: 16.66%;
+            }
+
+            .col-m-3 {
+                width: 25%;
+            }
+
+            .col-m-4 {
+                width: 33.33%;
+            }
+
+            .col-m-5 {
+                width: 41.66%;
+            }
+
+            .col-m-6 {
+                width: 50%;
+            }
+
+            .col-m-7 {
+                width: 58.33%;
+            }
+
+            .col-m-8 {
+                width: 66.66%;
+            }
+
+            .col-m-9 {
+                width: 75%;
+            }
+
+            .col-m-10 {
+                width: 83.33%;
+            }
+
+            .col-m-11 {
+                width: 91.66%;
+            }
+
+            .col-m-12 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+
+            /* For desktop: */
+            body {
+                background: tan;
+            }
+
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+
+            #left-nav {
+                padding-left: 4%;
+            }
+
+            #right-nav {
+                padding-right: 4%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="row">
+            <h1>Chicken</h1>
+            <nav>
+                <div class="col-3 col-m-4" id="left-nav"><a href="index.html">Home</a> </div>
+                <div class="col-2 col-m-4"><a href="beef.html">Beef</a> </div>
+                <div class="col-2 col-m-4"><a href="chicken.html">Chicken</a></div>
+                <div class="col-2 col-m-6"><a href="fish.html">Fish</a></div>
+
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-4 col-m-6"> <img src="chiken1.jpg" alt="chicken"> </div>
+                <div class="col-8 col-m-6">
+                    <p>Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost
+                        of raising them in
+                        comparison to animals such as cattle or hogs, chickens have become prevalent throughout the
+                        cuisine of cultures around
+                        the world, and their meat has been variously adapted to regional tastes.</p>
+
+                    <p>Chicken can be prepared in a vast range of ways, including baking, grilling, barbecuing, frying,
+                        and boiling, among many
+                        others, depending on its purpose.</p>
+                    <p>Since the latter half of the 20th century, prepared chicken
+                        has become a staple of
+                        fast food. </p>
+                    <p>Chicken is also sometimes cited as being more healthful than red meat, with lower
+                        concentrations of cholesterol
+                        and saturated fat.</p>
+
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <div class="col-7 col-m-6">
+                    <p>Fried chicken, is a dish consisting of chicken pieces which have been coated in a seasoned batter
+                        and pan-fried, deep
+                        fried, or pressure fried.</p>
+                    <p>You can add breading to make it have a crisp coating or crust which is on the exterior of the
+                        chicken while retaining
+                        juices in the meat.</p>
+                    <p>Originally form the south, fried chicken was adapted by many people in their recipes that vary
+                        from good to bad and is a very popular meal during the holidays.
+                    </p>
+                    <p>Fried chicken has been described as being crunchy and juicy, as well as crispy. In
+                        addition, the dish has
+                        also been called spicy and salty.</p>
+                    <p>Occasionally, fried chicken is also topped with a chili
+                        like paprika, or hot
+                        sauce to give it a spicy taste.</p>
+                    <p>As mentioned before, you can add spice levels in order to justify your palet but it alsways
+                        comes down to the original.
+                    </p>
+
+                </div>
+                <div class="col-5 col-m-6"><img src="chicken2.jpg" alt="fried-chicken"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-4 col-m-6">
+                    <p>A Buffalo wing, in the cuisine of the United States, is an unbreaded chicken wing section that is
+                        generally deep-fried
+                        then coated or dipped in a sauce consisting of a vinegar-based cayenne pepper hot sauce and
+                        melted butter prior to
+                        serving.</p>
+                    <p>Most commonly seen at buffalo wild wings, these are a popular food choice during sunday football
+                        and generally any sporting event.
+                    </p>
+                    <p>Buffalo wings have gained in popularity in the United States and abroad, with some North American
+                        restaurant chains
+                        featuring them as a main menu item.</p>
+
+
+                </div>
+                <div class="col-4 col-m-6"> <img src="chicken3.jpg" alt="chicken-wings"> </div>
+                <div class="col-4 col-m-12">
+                    <p>The name "Buffalo" is now also applied to other spiced fried
+                        foods served with
+                        dipping sauces, including boneless chicken wings , chicken
+                        fries, chicken nuggets,
+                        popcorn chicken, and shrimp.
+                    </p>
+                    <p> A fact about this food is that in 1977, the city of Buffalo issued an official proclamation
+                        celebrating Anchor Bar co-owner Frank Bellissimo and
+                        declared July 29, 1977 to be Chicken Wing Day. Also throughout the 1970s and 1980s Buffalo wings
+                        gained in popularity as
+                        a bar food and appetizer across the United States and Canada.</p>
+
+
+                </div>
+            </div>
+
+        </main>
+        <footer class="row">
+            <div class="col-12">
+                <h3> &copy; Jonatan Rios 2020 </h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
